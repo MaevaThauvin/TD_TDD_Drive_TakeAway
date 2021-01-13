@@ -160,7 +160,7 @@ public class Panier {
 	
 	public void boycottOrigine(String paysOrigine) {
 		for (int i = 0 ; i<ListOrange.size() ; i++) {
-			if(ListOrange.get(i).getOrigine()==paysOrigine) {
+			if(ListOrange.get(i).getOrigine().equals(paysOrigine)) {
 				ListOrange.remove(i);
 				i=0;
 			}
