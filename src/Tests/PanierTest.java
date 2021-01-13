@@ -17,6 +17,7 @@ public class PanierTest {
 	
 	@Before
 	public void init() {
+		
 		ArrayList<Orange> listOranges = new ArrayList<Orange>();	
 		ArrayList<Orange> listOranges2 = new ArrayList<Orange>();	
 		p = new Panier(listOranges, 4);
@@ -45,7 +46,9 @@ public class PanierTest {
 			p.ajoute(o2);
 			p.ajoute(o3);
 			p.ajoute(o4);			
-			assertEquals(true, p.estPlein());		
+			assertEquals(true, p.estPlein());	
+			//Je vide mon panier pour tester Git et Jenkins
+			p.viderPanier();
 	}
 	
 	@Test
